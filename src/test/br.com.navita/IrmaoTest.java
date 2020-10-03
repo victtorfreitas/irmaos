@@ -22,4 +22,10 @@ public class IrmaoTest {
         int maiorValorDaFamiliaRetornado = getMaiorValorDaFamilia(valor);
         assertEquals(maiorValorDaFamilia, maiorValorDaFamiliaRetornado);
     }
+
+    @Test(expected = RuntimeException.class)
+    public void naoDeveAceitarNumeroNegativos() {
+        this.valor *= -1;
+        int maiorValorDaFamiliaRetorno = getMaiorValorDaFamilia(valor);
+    }
 }
