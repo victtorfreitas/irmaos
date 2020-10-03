@@ -36,4 +36,11 @@ public class IrmaoTest {
         assertEquals(this.valor, maiorValorDaFamiliaRetorno);
     }
 
+    @Test
+    public void deveAceitarValorComNumerosIguais() {
+        this.valor = 999999;
+        int maiorValorDaFamiliaRetorno = getMaiorValorDaFamilia(valor);
+        assertEquals(this.valor, maiorValorDaFamiliaRetorno);
+    }
+
 }
