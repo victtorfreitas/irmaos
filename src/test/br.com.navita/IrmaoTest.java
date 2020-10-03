@@ -28,4 +28,12 @@ public class IrmaoTest {
         this.valor *= -1;
         int maiorValorDaFamiliaRetorno = getMaiorValorDaFamilia(valor);
     }
+
+    @Test
+    public void deveAceitarValoresZerados() {
+        this.valor = 0;
+        int maiorValorDaFamiliaRetorno = getMaiorValorDaFamilia(valor);
+        assertEquals(this.valor, maiorValorDaFamiliaRetorno);
+    }
+
 }
