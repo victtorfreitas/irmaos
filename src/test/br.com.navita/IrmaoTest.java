@@ -43,4 +43,10 @@ public class IrmaoTest {
         assertEquals(this.valor, maiorValorDaFamiliaRetorno);
     }
 
+    @Test
+    public void deveRetornarMenosUmSeValorExcederCemMilhoes() {
+        this.valor = 100000001;
+        int maiorValorDaFamiliaRetorno = getMaiorValorDaFamilia(valor);
+        assertEquals(-1, maiorValorDaFamiliaRetorno);
+    }
 }
