@@ -8,6 +8,10 @@ public class Irmao {
     private static final int TAMANHO_MAXIMO_PERMITIDO = 100000000;
 
     public static int getMaiorValorDaFamilia(Integer valor) {
+        if (valor < 0) {
+            throw new RuntimeException("O valor deve ser maior que zero");
+        }
+
         if (valor > TAMANHO_MAXIMO_PERMITIDO) {
             return -1;
         }
