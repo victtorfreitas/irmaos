@@ -13,7 +13,7 @@ Esse projeto é inteiramente desenvolvido em Java e com o suporte dos frameworks
 
 ### Autor
 
--   Victtor Araújo Freitas
+-   Victtor Freitas
 
 ## Licença
 
