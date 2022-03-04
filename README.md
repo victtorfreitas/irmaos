@@ -9,7 +9,7 @@ resultado exceder 100.000.000.
 
 ### Tecnologia
 
-Esse projeto é inteiramente desenvolvido em Java e com o suporte do framework JUnit.
+Esse projeto é inteiramente desenvolvido em Java e com o suporte dos frameworks JUnit e Mockito.
 
 ### Autor
 
